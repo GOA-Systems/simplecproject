@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "gcc.exe -g -o bin/main.exe main.c",
+            "problemMatcher": [],
+            "options": {
+                "cwd": "${workspaceFolder}",
+                "env": {
+                    "PATH": "${env:PATH};${env:LocalAppData}/Programs/Msys2/mingw64/bin;${env:LocalAppData}/Programs/Msys2/usr/bin"
+                }
+            }
+        }
+    ]
+}
