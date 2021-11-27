@@ -13,7 +13,7 @@ Fist the quick links to the resources:
 
 Now the installation hints.
 
-I prefer to use the tar.xz archive, but I guess you can use the installer as well. I will just provide information on where I have the stuff located on my harddrive in order for the project to work. If you have it somewhere else you may have to adjust the path variables in the json files aftwards.
+I prefer to use the tar.xz archive, but I guess you can use the installer as well. I will just provide information on where I have the stuff located on my hard drive in order for the project to work. If you have it somewhere else you may have to adjust the path variables in the json files afterwards.
 
 ![Download archive](doc/MeFyjzzDHe.png)
 
@@ -35,7 +35,7 @@ When everything is extracted there, the Msys2 shell can be launched like this:
 %LocalAppData%\Programs\Msys2\mingw64.exe
 ```
 
-Then some initial setup steps are executed. I am not going to show a screenshot here because this is not importand and only appears on first launch. When shown in the the terminal window the program has to be closed by typing "exit" and confirming with [ENTER]. Then it has to be reopened and the required tools can be installed with the following command:
+Then some initial setup steps are executed. I am not going to show a screenshot here because this is not important and only appears on first launch. When shown in the the terminal window the program has to be closed by typing "exit" and confirming with [ENTER]. Then it has to be reopened and the required tools can be installed with the following command:
 
 ```bash
 pacman -S mingw-w64-x86_64-gdb mingw-w64-x86_64-gcc mingw-w64-x86_64-openssl mingw-w64-x86_64-make
@@ -57,7 +57,7 @@ The whole configuration consists of three files:
 
 * c_cpp_properties.json: Defines where to find include directories, files, etc.
 * launch.json: Defines what happens if "F5" is pressed in VS Code (Debug file)
-* tasks.json: Defines how to build the porject
+* tasks.json: Defines how to build the project
 
 In this case these three files have the following contents.
 
@@ -158,6 +158,6 @@ int main(int argc, char** argv){
 }
 ```
 
-When opening the file, adding a breakpoint and pressing "F5" the application should be compiled, started and halted at the shown position:
+When opening the file, adding a break point and pressing "F5" the application should be compiled, started and halted at the shown position:
 
 ![Stopping at breakpoint](doc/VMveFMd6wF.png)
